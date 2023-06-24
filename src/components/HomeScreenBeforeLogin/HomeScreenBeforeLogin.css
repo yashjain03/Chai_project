@@ -1,0 +1,167 @@
+.home-screen-before-login {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.overlap-group1 {
+  height: 209px;
+  position: relative;
+  width: 1440px;
+}
+
+.nav_bar {
+  background-color: var(--background);
+  box-shadow: 0px 4px 4px #00000040;
+  height: 135px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.whats-happening-in {
+  left: 506px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 134px;
+  width: 543px;
+}
+
+.overlap-group2 {
+  border-radius: 50px;
+  height: 95px;
+  margin-left: 63.0px;
+  margin-top: 28px;
+  position: relative;
+  width: 537px;
+}
+
+.search-location {
+  left: 81px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+  width: 407px;
+}
+
+.overlap-group3 {
+  height: 95px;
+  margin-left: 92.0px;
+  margin-top: 75px;
+  position: relative;
+  width: 566px;
+}
+
+.anytime {
+  left: 159px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+  width: 407px;
+}
+
+.overlap-group {
+  align-self: flex-start;
+  height: 450px;
+  margin-top: 72px;
+  position: relative;
+  width: 1487px;
+}
+
+.rectangle-3 {
+  background-color: var(--background);
+  height: 450px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.title {
+  left: 279px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 42px;
+  white-space: nowrap;
+  width: 492px;
+}
+
+.concerts {
+  left: 971px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 42px;
+  white-space: nowrap;
+  width: 492px;
+}
+
+.fashion {
+  left: 75px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 362px;
+  width: 228px;
+}
+
+.medical {
+  left: 303px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 363px;
+  width: 228px;
+}
+
+.art {
+  left: 493px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 363px;
+  width: 228px;
+}
+
+.classical-music {
+  left: 721px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 358px;
+  width: 228px;
+}
+
+.place {
+  left: 952px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 363px;
+  width: 228px;
+}
+
+.jazz {
+  left: 1259px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 362px;
+  width: 228px;
+}
+

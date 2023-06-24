@@ -1,0 +1,18 @@
+.log-in {
+  align-items: flex-start;
+  display: flex;
+  height: 59px;
+  left: 1245px;
+  min-width: 161px;
+  position: absolute;
+  top: 33px;
+}
+
+.log-in-1 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 59px;
+  width: 161px;
+}
+

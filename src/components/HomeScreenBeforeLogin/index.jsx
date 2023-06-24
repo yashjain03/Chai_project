@@ -9,14 +9,9 @@ import Ellipse4 from "../Ellipse4";
 import Ellipse5 from "../Ellipse5";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
 import 'react-datepicker/dist/react-datepicker-min.module.css';
 import 'react-datepicker/dist/react-datepicker.module.css'
-import 'react-calendar/dist/Calendar.css';
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng,
-} from 'react-places-autocomplete';
+
 import "./HomeScreenBeforeLogin.css";
 
 function HomeScreenBeforeLogin(props) {

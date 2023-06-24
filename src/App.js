@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import HomeScreenBeforeLogin from "./components/HomeScreenBeforeLogin";
+import { useState } from 'react';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ const logInData = {
     children: "Log In",
 };
 
+
+
 const homeScreenBeforeLoginData = {
     whatsHappeningIn: "What’s happening in :",
     searchLocation: "Search location..",
@@ -34,4 +37,3 @@ const homeScreenBeforeLoginData = {
     jazz: "Jazz",
     logInProps: logInData,
 };
-

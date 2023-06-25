@@ -12,6 +12,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import 'react-datepicker/dist/react-datepicker-min.module.css';
 import 'react-datepicker/dist/react-datepicker.module.css';
 import "./HomeScreenBeforeLogin.css";
+import { Link } from "react-router-dom"; 
 
 function HomeScreenBeforeLogin(props) {
   const {
@@ -30,106 +31,69 @@ function HomeScreenBeforeLogin(props) {
   } = props;
   const [SelectedDate, SetSelectedDate] = useState(null);
 
-  return React.createElement(
-    "div",
-    { className: "container-center-horizontal" },
-    React.createElement(
-      "div",
-      { className: "home-screen-before-login screen" },
-      React.createElement(
-        "div",
-        { className: "overlap-group1" },
-        React.createElement("div", { className: "nav_bar" }),
-        React.createElement(
-          "div",
-          { className: "whats-happening-in inter-normal-comet-48px" },
-          whatsHappeningIn
-        ),
-        React.createElement(
-          LogIn,
-          null,
-          logInProps.children
-        )
-      ),
-      React.createElement(
-        "div",
-        { className: "overlap-group2" },
-        React.createElement(Rectangle4, null),
-        React.createElement(
-          "div",
-          { className: "search-location inter-normal-martini-48px" },
-          searchLocation
-        )
-      ),
-      React.createElement(
-        "div",
-        { className: "overlap-group3" },
-        React.createElement(Rectangle4, null),
-        React.createElement(
-          "div",
-          { className: "anytime inter-normal-martini-48px" },
-          anytime,
-          React.createElement(DatePicker, {
-            selected: SelectedDate,
-            onChange: date => SetSelectedDate(date) //only when value has changed
-            , minDate: new Date()
-          })
-        )
-      ),
-      React.createElement(
-        "div",
-        { className: "overlap-group" },
-        React.createElement("div", { className: "rectangle-3" }),
-        React.createElement(Fashion, null),
-        React.createElement(Medical, null),
-        React.createElement(Art, null),
-        React.createElement(Ellipse3, null),
-        React.createElement(Ellipse4, null),
-        React.createElement(Ellipse5, null),
-        React.createElement(
-          "h1",
-          { className: "title jimnightshade-normal-comet-64px" },
-          title
-        ),
-        React.createElement(
-          "div",
-          { className: "concerts jimnightshade-normal-comet-64px" },
-          concerts
-        ),
-        React.createElement(
-          "div",
-          { className: "fashion inter-normal-comet-32px" },
-          fashion
-        ),
-        React.createElement(
-          "div",
-          { className: "medical inter-normal-comet-32px" },
-          medical
-        ),
-        React.createElement(
-          "div",
-          { className: "art inter-normal-comet-32px" },
-          art
-        ),
-        React.createElement(
-          "div",
-          { className: "classical-music inter-normal-comet-32px" },
-          classicalMusic
-        ),
-        React.createElement(
-          "div",
-          { className: "place inter-normal-comet-32px" },
-          place
-        ),
-        React.createElement(
-          "div",
-          { className: "jazz inter-normal-comet-32px" },
-          jazz
-        )
-      )
-    )
+  return (
+    <div className="container-center-horizontal">
+      <div className="home-screen-before-login screen">
+        <div className="overlap-group1">
+          <div className="nav_bar" />
+          <div className="whats-happening-in inter-normal-comet-48px">
+            {whatsHappeningIn}
+          </div>
+          <LogIn>{logInProps.children}</LogIn>
+        </div>
+        <div className="overlap-group2">
+          <Rectangle4 />
+          <div className="search-location inter-normal-martini-48px">
+            {searchLocation}
+          </div>
+        </div>
+        <div className="overlap-group3">
+          <Rectangle4 />
+          <div className="anytime inter-normal-martini-48px">
+            {anytime}
+            <DatePicker
+              selected={SelectedDate}
+              onChange={(date) => SetSelectedDate(date)}
+              minDate={new Date()}
+            />
+          </div>
+        </div>
+        <div className="overlap-group">
+          <div className="rectangle-3" />
+          <Fashion />
+          <Medical />
+          <Link to="/art">
+          <Art />
+          </Link>
+          <Ellipse3 />
+          <Ellipse4 />
+          <Ellipse5 />
+          <h1 className="title jimnightshade-normal-comet-64px">{title}</h1>
+          <div className="concerts jimnightshade-normal-comet-64px">
+            {concerts}
+          </div>
+          <Link to="/fashion">
+            <div className="fashion inter-normal-comet-32px">{fashion}</div>
+          </Link>
+          <Link to="/art">
+            <div className="art inter-normal-comet-32px">{art}</div>
+          </Link>
+          <Link to="/medical">
+            <div className="medical inter-normal-comet-32px">{medical}</div>
+          </Link>
+          <div className="place inter-normal-comet-32px">{place}</div>
+          <Link to="/classical-music">
+            <div className="classical-music inter-normal-comet-32px">
+              {classicalMusic}
+            </div>
+          </Link>
+          <Link to="/jazz">
+            <div className="jazz inter-normal-comet-32px">{jazz}</div>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }
 
 export default HomeScreenBeforeLogin;
-

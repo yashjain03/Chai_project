@@ -11,7 +11,6 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-datepicker/dist/react-datepicker-min.module.css';
 import 'react-datepicker/dist/react-datepicker.module.css'
-import Autocomplete from "react-google-autocomplete";
 import "./HomeScreenBeforeLogin.css";
 
 function HomeScreenBeforeLogin(props) {
@@ -43,18 +42,6 @@ function HomeScreenBeforeLogin(props) {
           <Rectangle4 />
           <div className="search-location inter-normal-martini-48px">
             {searchLocation}
-            <Autocomplete
-              apiKey={YOUR_GOOGLE_MAPS_API_KEY}
-              style={{ width: "90%" }}
-              onPlaceSelected={(place) => {
-                console.log(place);
-              }}
-              options={{
-                types: ["(regions)"],
-                componentRestrictions: { country: "ru" },
-              }}
-              defaultValue="Sydney"
-            />;
           </div>
         </div>
         <div className="overlap-group3">

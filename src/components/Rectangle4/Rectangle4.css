@@ -1,4 +1,5 @@
 .rectangle {
+  display: flexbox;
   background-color: var(--dark);
   border-radius: 50px;
   height: 95px;

@@ -30,7 +30,7 @@
   .inter-normal-martini-48px {
     color: var(--martini);
     font-family: var(--font-family-inter);
-    font-size: var(--font-size-m);
+    font-size: 35px;
     font-style: normal;
     font-weight: 400;
   }

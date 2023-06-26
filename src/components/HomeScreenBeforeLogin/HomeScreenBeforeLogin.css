@@ -62,7 +62,7 @@
 }
 
 .anytime {
-  left: 159px;
+  /* left: 159px; */
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -164,4 +164,20 @@
   top: 362px;
   width: 228px;
 }
+.size {
+  display: flex;
+  flex-direction: row;
+}
+.start_date_picker{
+  background-color: #ADA1A1;
+  /* position: relative; */
+  height: 50px;
+  width: 100px;
+}
 
+.end_date_picker{
+  background-color: #ADA1A1;
+  /* position: relative; */
+  height: 50px;
+  width: 100px;
+}

@@ -1,0 +1,10 @@
+.rectangle {
+  background-color: var(--dark);
+  border-radius: 50px;
+  height: 95px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 537px;
+}
+

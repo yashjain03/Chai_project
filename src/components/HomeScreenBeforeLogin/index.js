@@ -49,25 +49,36 @@ function HomeScreenBeforeLogin(props) {
         </div>
         <div className="overlap-group3">
           <Rectangle4 />
-          <div className="anytime inter-normal-martini-48px">
-            {anytime}
-            <DatePicker
-              selected={SelectedDate}
-              onChange={(date) => SetSelectedDate(date)}
-              minDate={new Date()}
-            />
+          <div className="anytime inter-normal-martini-48px size">
+            {/* {anytime} */}
+            <div>
+              Start Date
+              <DatePicker className="start_date_picker"
+                selected={SelectedDate}
+                onChange={(date) => SetSelectedDate(date)}
+                minDate={new Date()}
+              />
+            </div>
+            <div> 
+              End Date
+              <DatePicker className="end_date_picker"
+                selected={SelectedDate}
+                onChange={(date) => SetSelectedDate(date)}
+                minDate={new Date()}
+              />
+            </div> 
           </div>
         </div>
+        
         <div className="overlap-group">
           <div className="rectangle-3" />
-          <Fashion />
-          <Medical />
-          <Link to="/art">
-          <Art />
-          </Link>
-          <Ellipse3 />
-          <Ellipse4 />
-          <Ellipse5 />
+          <Link to='/fashion'><Fashion /></Link>
+          <Link to='/medical'><Medical /></Link>
+          <Link to="/art"><Art /></Link>
+          <Link to="/jazz"><Ellipse3 /></Link>
+          <Link to="/opera"><Ellipse4 /></Link>
+          <Link to="/classical_music"><Ellipse5 /></Link>
+
           <h1 className="title jimnightshade-normal-comet-64px">{title}</h1>
           <div className="concerts jimnightshade-normal-comet-64px">
             {concerts}
